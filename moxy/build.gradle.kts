@@ -3,6 +3,7 @@ plugins {
     id("com.jfrog.bintray")
     id("maven-publish")
     id("moxy-publishing-plugin")
+    id("kotlin")
 }
 
 java {
@@ -15,7 +16,7 @@ java {
 
 dependencies {
     compileOnly(Deps.android)
-
+    implementation(Deps.kotlinStdlibForCompiler)
     testImplementation(Deps.junit)
     testImplementation(Deps.mockito)
     testImplementation(Deps.truth)
