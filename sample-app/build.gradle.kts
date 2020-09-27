@@ -16,7 +16,7 @@ android {
 
     defaultConfig {
         applicationId = "moxy.sample"
-        minSdkVersion(23)
+        minSdkVersion(21)
         targetSdkVersion(29)
         versionCode = 1
         versionName = "1.0"
